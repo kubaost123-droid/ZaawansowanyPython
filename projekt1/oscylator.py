@@ -106,7 +106,7 @@ class Rysowanie(Visualizer):
         
         plt.tight_layout(h_pad=3.0, w_pad=3.0)
 
-        plt.savefig('wykresy.png', dpi=300, bbox_inches='tight')
+        plt.savefig('projekt1/wykresy.png', dpi=300, bbox_inches='tight')
         plt.show()
 
 class AnalizerFinalnychStatystyk(FinalAnalyzer):
