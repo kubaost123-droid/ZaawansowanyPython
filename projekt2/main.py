@@ -78,7 +78,9 @@ def sim_bn(siatka_pocz,M,J,B):
 czas_pocz = time.time()
 smiec = sim_bn(siatka,M,J,B)
 czas_bez_numby = time.time()-czas_pocz
-print(f'Czas działania programu bez numby: {czas_bez_numby:.3f}')
+print('#################################################')
+print(f'Czas działania programu bez numby: {czas_bez_numby:.3f} sekund')
+print('#################################################')
 
 
 #################################################
@@ -135,8 +137,10 @@ smiec_rozgrzewkowy = sim_n(siatka.copy(), 1, J, B)
 czas_pocz = time.time()
 smiec = sim_n(siatka.copy(),M,J,B)
 czas_z_numba = time.time() - czas_pocz
-print(f'Czas działania programu bez numby: {czas_z_numba:.3f}')
+print(f'Czas działania programu z numba: {czas_z_numba:.3f} sekund')
+print('#################################################')
 print(f'Numba jest {czas_bez_numby/czas_z_numba:.3f} razy szybsza')
+print('#################################################')
 
 #################################################
 #                  Animacja
